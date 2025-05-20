@@ -1,0 +1,29 @@
+{
+  "name": "serp-yandex-collector",
+  "version": "1.0.0",
+  "description": "Сборщик поисковых результатов Яндекса для анализа конкурентов",
+  "main": "index.js",
+  "scripts": {
+    "collect": "node src/yandex-collector.js",
+    "process": "node src/process-results.js",
+    "analyze": "node src/traffic-analyzer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "яндекс",
+    "поисковая выдача",
+    "сбор данных"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.1.1",
+    "moment": "^2.29.4",
+    "puppeteer": "^24.9.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "xlsx": "^0.18.5"
+  }
+}
